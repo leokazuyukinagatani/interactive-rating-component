@@ -20,21 +20,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./sript.js" defer></script>
   </head>
   <body>
     <!-- Rating state start -->
 
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="logo">
+            <img src="./images/icon-star.svg" alt="logo" />
+          </div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="ratings">
+            <button id="rating-1" class="active" onclick="ratingChange(event)">1</button>
+            <button id="rating-2" onclick="ratingChange(event)">2</button>
+            <button id="rating-3" onclick="ratingChange(event)">3</button>
+            <button id="rating-4" onclick="ratingChange(event)">4</button>
+            <button id="rating-5" onclick="ratingChange(event)">5</button>
+          </div>
+
+          <button class="submit" onclick="submit()">SUBMIT</button>
+        </div>
+        <div class="flip-card-back">
+          <img src="./images/illustration-thank-you.svg" alt="logo" />
+
+          <div id="selected">You selected 4 out of 5</div>
+          <h1>Thank you!</h1>
+          <p class="text-center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    You selected
+    <!-- You selected -->
     <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
+    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch! -->
 
     <!-- Thank you state end -->
 
