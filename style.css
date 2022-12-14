@@ -141,10 +141,12 @@ button.submit {
   border-radius: 0.5rem;
   border: none;
   transition: background-color 0.2s;
+  cursor: pointer;
 }
 
 button.submit:hover {
-  background-color: var(--orange-300);
+  background-color: var(--white);
+  color: var(--orange-500);
 }
 
 #selected {
